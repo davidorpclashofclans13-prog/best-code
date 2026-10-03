@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Lista de tarefas</h1>
+      <p class="hint">Clique no texto de uma tarefa para removê-la. O checkbox marca como concluída.</p>
+
+      <form id="form-tarefa" class="form">
+        <label for="tarefa">Nova tarefa</label>
+        <div class="row">
+          <input id="tarefa" type="text" placeholder="Ex.: estudar JavaScript" autocomplete="off" />
+          <button type="submit">Adicionar</button>
+        </div>
+      </form>
+
+      <ul id="lista"></ul>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

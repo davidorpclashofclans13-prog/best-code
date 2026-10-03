@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  background: #f3f0ea;
+  color: #241c16;
+}
+
+.app {
+  width: min(560px, calc(100% - 2rem));
+  margin: 3rem auto;
+  padding: 1.5rem;
+  background: #fffdf9;
+  border: 1px solid #e4d8cb;
+  border-radius: 14px;
+}
+
+h1 {
+  margin: 0 0 0.35rem;
+  font-size: 1.7rem;
+}
+
+.hint {
+  margin: 0 0 1.2rem;
+  color: #6d5c4d;
+  font-size: 0.92rem;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.row {
+  display: flex;
+  gap: 0.6rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid #e4d8cb;
+  border-radius: 8px;
+  font: inherit;
+}
+
+button {
+  padding: 0.7rem 1rem;
+  border: 0;
+  border-radius: 8px;
+  background: #8c4a2f;
+  color: #fffaf4;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #6d3520;
+}
+
+#lista {
+  margin: 1.2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+#lista li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.75rem 0.2rem;
+  border-bottom: 1px solid #efe6dc;
+  cursor: pointer;
+}
+
+#lista li.concluida span {
+  text-decoration: line-through;
+  color: #8a796a;
+}
+
+#lista li span {
+  flex: 1;
+}
