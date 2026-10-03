@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café de Casa — O ritual que cabe na xícara</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <p class="brand-mark">Café de Casa</p>
+        <p class="brand-tag">notas de um ritual diário</p>
+      </div>
+      <nav aria-label="Principal">
+        <ul class="nav-list">
+          <li><a href="#artigo">Artigo</a></li>
+          <li><a href="#relacionados">Relacionados</a></li>
+          <li><a href="#comentarios">Comentários</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="layout">
+      <article id="artigo" class="post">
+        <p class="kicker">Preparação</p>
+        <h1>O ritual que cabe numa xícara</h1>
+        <p class="meta">
+          Por <span class="author">Marina Alves</span>
+          <time datetime="2026-08-28">28 de agosto de 2026</time>
+        </p>
+
+        <figure class="hero">
+          <img
+            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1400&q=80"
+            alt="Xícara de café sobre uma mesa de madeira, com vapor subindo"
+          />
+          <figcaption>Cinco minutos de preparo mudam o resto da manhã.</figcaption>
+        </figure>
+
+        <p>
+          Durante anos eu tratava o café como combustível: cápsula, botão,
+          primeira reunião. O gosto era o de sempre e a pressa também. O que
+          mudou não foi um curso caro nem uma máquina nova. Foi perceber que
+          o intervalo entre moer o grão e a primeira golada é o único pedaço
+          do dia que ainda me pertence inteiro.
+        </p>
+        <p>
+          Um café especial não precisa de teatro. Precisa de três coisas que
+          cabem numa cozinha pequena: grão com data de torra, água na
+          temperatura certa e atenção. Quando a água passa rápido demais, a
+          xícara fica ácida e fina. Quando demora, fica amarga. O meio do
+          caminho tem sabor de chocolate, fruta ou mel — depende do que estava
+          escrito no pacote e do que você deixou acontecer.
+        </p>
+
+        <section class="post-section">
+          <h2>O que eu faço em casa</h2>
+          <p>
+            Uso uma balança de cozinha, um filtro de papel e uma chaleira. A
+            proporção que mais me agrada é 15 gramas de café para 250 ml de
+            água, moagem média, água por volta de 92 °C. Não é uma receita de
+            laboratório. É um ponto de partida que eu repito até o sabor ficar
+            familiar o bastante para eu notar quando algo saiu diferente.
+          </p>
+          <ul class="steps">
+            <li>Aqueço a água e enxáguo o filtro para tirar o gosto de papel.</li>
+            <li>Despejo um pouco de água só para o café “acordar” e espero 30 segundos.</li>
+            <li>Completo o volume em círculos lentos e deixo a gravidade trabalhar.</li>
+          </ul>
+        </section>
+
+        <section class="post-section">
+          <h2>Assistir o preparo ajuda mais do que ler a embalagem</h2>
+          <p>
+            O vídeo abaixo mostra um coado simples, do tipo que dá para repetir
+            amanhã de manhã sem equipamento extra.
+          </p>
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/AI4ynXzkSQo"
+              title="The Ultimate V60 Technique, de James Hoffmann"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+      </article>
+
+      <aside id="relacionados" class="sidebar">
+        <h2>Posts relacionados</h2>
+        <ul class="related">
+          <li>
+            <a href="#artigo">Água: o ingrediente que ninguém fotografa</a>
+            <span>12 de agosto de 2026</span>
+          </li>
+          <li>
+            <a href="#artigo">Moagem fina demais e o amargor que aparece depois</a>
+            <span>3 de agosto de 2026</span>
+          </li>
+          <li>
+            <a href="#artigo">Como ler a data de torra no pacote</a>
+            <span>21 de julho de 2026</span>
+          </li>
+        </ul>
+      </aside>
+    </main>
+
+    <section id="comentarios" class="comments">
+      <h2>Deixe um comentário</h2>
+      <p class="comments-lead">
+        Conta qual método você usa em casa. O formulário só organiza a mensagem;
+        nada é publicado automaticamente.
+      </p>
+      <form class="comment-form" action="#" method="post">
+        <div class="field">
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" type="text" required autocomplete="name" />
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" required autocomplete="email" />
+        </div>
+        <div class="field">
+          <label for="metodo">Método que você usa</label>
+          <select id="metodo" name="metodo" required>
+            <option value="">Selecione</option>
+            <option value="coado">Coado</option>
+            <option value="prensa">Prensa francesa</option>
+            <option value="espresso">Espresso</option>
+            <option value="capsula">Cápsula</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="mensagem">Comentário</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        </div>
+        <div class="field field-check">
+          <input id="novidades" name="novidades" type="checkbox" />
+          <label for="novidades">Quero receber a newsletter semanal</label>
+        </div>
+        <button type="submit">Publicar comentário</button>
+      </form>
+    </section>
+
+    <footer class="site-footer">
+      <p>© 2026 Café de Casa. Feito para a atividade de blog responsivo.</p>
+    </footer>
+  </body>
+</html>
